@@ -14,6 +14,7 @@ html {
 
 body {
   padding-top: 60px;
+  background-color: #eef
 }
 
 section {
@@ -22,6 +23,10 @@ section {
 
 textarea {
   resize: vertical;
+}
+
+.hero-unit {
+  background-color: #889;
 }
 
 .center {
@@ -56,6 +61,10 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+a {
+  color: #33f;
 }
 
 /* header */
