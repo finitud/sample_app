@@ -24,9 +24,7 @@ class User < ActiveRecord::Base
   validates :password_confirmation, presence: true
 
   def feed
-    # This is a proto-feed for now...
-    # self.microposts # or...
-    Micropost.where("user_id = ?", id) # this protects from SQL injection
+    Micropost.from_users_followed_by(self)
   end
 
   def following?(other_user)
